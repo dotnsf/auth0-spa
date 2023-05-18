@@ -27,7 +27,7 @@ function App() {
           <h2>Hello {user.name}.</h2>
           <hr />
           <button onClick={() => {
-            logout( { returnTo: window.location.origin } );
+            logout( { returnTo: window.location.origin + window.location.pathname } );
           }}>LOGOUT</button>
           </>
         )}
